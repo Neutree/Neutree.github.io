@@ -97,6 +97,7 @@ a {
 a:active,
 a:hover {
   outline: 0;
+  
 }
 
 /* Text-level semantics
@@ -442,9 +443,10 @@ p {
 
 a {
   color: #2879d0;
+  transition: all .4s;
 }
 a:hover {
-  color: #2268b2;
+  color:#38c790
 }
 
 header {
@@ -535,6 +537,14 @@ header a.button {
   top: 0;
   right: 0;
   background: transparent url(../images/github-button.png) 0 0 no-repeat;
+  transition: all .4s;
+}
+header a.button:hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.1) url(../images/github-button.png) 0 0 no-repeat;
+  transition: all .4s;
 }
 aside a.button {
   display: block;
