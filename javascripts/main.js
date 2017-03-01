@@ -21,6 +21,14 @@ window.onload = function () {
 
 }
 
+$(document).ready(function(){
+    $(window).resize(function() {
+        $(".page-header-bg").removeJParticle();
+        AddBackground();
+    });
+});
+
+
 function AddBackground(){//http://www.htmleaf.com/jQuery/Layout-Interface/201506182060.html
     var number = 50;
     var width = document.body.clientWidth;
