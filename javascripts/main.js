@@ -1,8 +1,19 @@
 
 window.onload = function () {
-	AddBackground();
+
+}
+
+$(document).ready(function(){
+	$('#fullpage').fullpage({
+		sectionsColor : ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+		'navigation': true,
+		'navigationPosition': 'right',
+		'navigationTooltips': ['  ', '  '],
+		lazyLoading: true
+	});
+
   	document.getElementById("mail").onclick = function MailInfo(){
-    	alert("\n\n\n\n\n\n\n\n\t\tCZD666666@gmail.com \n\n\n\n\n\n");
+    	alert("\n\n\n\n\n\n\n\n  CZD666666@gmail.com \n\n\n\n\n\n");
   	}
 
     //去掉默认的contextmenu事件，否则会和右键事件同时出现。
@@ -18,14 +29,11 @@ window.onload = function () {
 //           alert("你点了滚轮");
        }
     }
-
-}
-
-$(document).ready(function(){
+    onResized();
     $(window).resize(function() {
-        $(".page-header-bg").removeJParticle();
-        AddBackground();
+      onResized();
     });
+
 });
 
 
@@ -46,3 +54,9 @@ function AddBackground(){//http://www.htmleaf.com/jQuery/Layout-Interface/201506
     });
 };
 
+function onResized(){
+    //重新设置header背景大小
+    $(".page-header-bg").css("height",$(document).height());
+    $(".page-header-bg").removeJParticle();
+    AddBackground();
+}
