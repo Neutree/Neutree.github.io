@@ -50,7 +50,12 @@ function AddBackground(){//http://www.htmleaf.com/jQuery/Layout-Interface/201506
     $(".page-header-bg").jParticle({
       background: " linear-gradient(120deg, #155799, #159957)",
       color: "#E6E6E6",
-      particlesNumber: number
+      particlesNumber: number,
+      particle: {
+        color: "white",
+        minSize: 2,
+        maxSize: 10,
+      }
     });
 };
 
