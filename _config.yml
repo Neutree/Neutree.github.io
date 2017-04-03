@@ -8,6 +8,7 @@ permalink: /:categories/:title.html
 
 # User settings
 username: Neucrack
+site_url: http://neucrack.com
 user_description: Embedded、Software、IOT、Cloud。。。
 user_title: Creator
 email: CZD666666@gmail.com
