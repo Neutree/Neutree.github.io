@@ -2,12 +2,12 @@
 layout: default
 title: Projects
 description: Projects list
-categories: 
+category: 
 ---
 
 <ul>
   {% for post in site.posts %}
-    {% if post.categories == 'projects' %}
+    {% if post.category == 'projects' %}
 	    <li class="post_list_item">
 	      <a href="{{ post.url }}">{{ post.title }}</a>
 	      {{ post.excerpt }}
