@@ -5,15 +5,17 @@ description: Projects list
 categories: 
 ---
 
-<ul>
+<ul class="post_list">
   {% for post in site.posts %}
   	{% for category in post.categories %}
 		{% if category == 'projects' %}
-		    <li class="post_list_item">
-		      <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-		      <h4>{{ post.date | date: '%B %d, %Y' }}</h4>
-		      <i>{{ post.excerpt }}</i>
-		    </li>
+			<a href="{{ post.url }}">
+			    <li class=" waves post_list_item">
+			      <h1>{{ post.title }}</h1>
+			      <h4>{{ post.date | date: '%Y-%m-%d' }}</h4>
+			      <p><i>{{ post.excerpt }}</i></p>
+			    </li>
+			</a>
 		{% endif %}
 	{% endfor %}
   {% endfor %}
