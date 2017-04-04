@@ -17,21 +17,19 @@ $(document).ready(function(){
   })
   //开关导航栏
   $("#close_menu").click(function(){
-    $("#menu_list").animate({right:'-300px',top:'-500px'},"fast");
-    $("#menu_list").animate({display:'none'},"fast");
+    closeMenu();
   });
   $("#toggle_menu_list").click(function(){
     if($("#menu_list").css("display")=="none"){
-        $("#menu_list").css("display","block");
-        $("#menu_list").css("right","-300px");
-        $("#menu_list").css("top","-500px");
-        $("#menu_list").animate({right:'20px',top:'20px'},"fast");
+        openMenu();
     }
     else{
-        $("#menu_list").animate({right:'-300px',top:'-500px'},"fast");
-        $("#menu_list").css("display","none");   
+        closeMenu();
     }
   });
+  $(".mask").click(function () {
+      closeMenu();
+  })
   //添加导航栏
   jQuery("#jquery-accordion-menu").jqueryAccordionMenu();
 
@@ -197,4 +195,21 @@ function buttonSetClickWaves() {
         //     window.location.href = e.target.href;
         
     });
+}
+
+function closeMenu() {
+    if($("#menu_list").css("display")!="none"){
+        $("#menu_list").animate({right:'-300px',top:'-500px'},"fast");
+        $("#menu_list").animate({display:'none'},"fast");
+        $(".mask").css("display","none");
+        $(".body_content").removeClass("blur");
+    }
+}
+function openMenu() {
+    $("#menu_list").css("display","block");
+    $("#menu_list").css("right","-300px");
+    $("#menu_list").css("top","-500px");
+    $("#menu_list").animate({right:'20px',top:'20px'},"fast");
+    $(".mask").css("display","block");
+    $(".body_content").addClass("blur");
 }
