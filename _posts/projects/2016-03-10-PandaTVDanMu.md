@@ -5,7 +5,7 @@ description: 使用Java窗体程序编写的小程序。通过抓包获取与弹
 categories: projects
 ---
 
-![](/assets/images/projects/PandaTvDanMu/testPic.png)
+![](/assets/images/projects/PandaTVDanMu/testPic.png)
 
 # 功能
 * 接收某个房间的弹幕和礼物
