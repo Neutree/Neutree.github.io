@@ -532,15 +532,18 @@ html,body{
 .footer{
     position:relative;   
     height:150px; 
-    background:#222222;   
+    background:#222222;
     /*background: linear-gradient(120deg, #155799, #159957);*/
-    color:#fff;   
-    font-size:16px;   
+    color:#fff;
+    font-size:16px;  
     text-align:center;
 }
 .footer-bottom{
 	bottom: 0px;
-    height: 10%;
+	height: 10%;
+	background:#222222;
+	color:#fff;
+	font-size:16px;
     position: absolute;
 	width: 100%;
 	padding: 10px;
