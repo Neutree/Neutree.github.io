@@ -538,6 +538,13 @@ html,body{
     font-size:16px;   
     text-align:center;
 }
+.footer-bottom{
+	bottom: 0px;
+    height: 10%;
+    position: absolute;
+	width: 100%;
+	padding: 10px;
+}
 
 .footer .contaner{
 	height: 64.6%;
