@@ -2,14 +2,14 @@
 title: Neucrack
 description: Drips And Drops About Neucrack
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
-# url: "localhost:3000" # the base hostname & protocol for your site e.g. http://neucrack.com
+# url: "localhost:3000" # the base hostname & protocol for your site e.g. https://neucrack.com
 
 permalink: /:categories/:title.html
 
 # User settings
 username: Neucrack
-site_url: http://neucrack.com
-user_description: Embedded、Software、IOT、Cloud。。。
+site_url: https://neucrack.com
+user_description: Embedded、Software、IOT、Cloud、AI。。。
 user_title: Creator
 email: CZD666666@gmail.com
 github_username:  neutree
@@ -17,6 +17,6 @@ github_username:  neutree
 
 # Google-analytics
 google-analytics:
-  id: ""
+  id: "UA-119047820-4"
 
 
